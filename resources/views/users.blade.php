@@ -5,8 +5,6 @@
 {{-- @include('footer') --}}
 {{-- <link href="{{ asset('css/style.css')}}"> --}}
 
-
-
 @empty($users)
      <p>No hay usuarios registrados</p>
 @else
@@ -16,6 +14,7 @@
 @endforeach
 </ul>
 @endif
+
 
 @for ($i = 0; $i <10; $i++)
     <li>   el valor actual es  {{ $i }} </li>

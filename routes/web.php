@@ -42,3 +42,8 @@ Route::get('/home/{name}/{nickname?}', function ($name, $nickname = null) {
 
 Route::get('/users', 'UserController@index');
 Route::get('users/detail/{id}', 'UserController@welcome' );
+
+/* Crear una profession */
+
+Route::get('/profession/create', 'ProfessionController@create');
+Route::get('/professions/', 'ProfessionController@showAll');
